@@ -44,7 +44,7 @@
             }
         } 
         else {
-            echo "Wpisz podstawę i wykładnik potęgi";
+            echo "Wpisz podstawę i wykładniik potęgi";
         }
         ?>
 </body>
