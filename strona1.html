@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="baner.jpg" alt="baner"></a>
+     </header>
+        <a href="strona1.html">- proste działania</a>
+        <a href="strona2.php">- potęgowanie</a>
+          <main>
+           <h1>PROSTE DZIAŁANIA</h1>
+           <p>Podaj pierwszą liczbę:
+         <input type="number" id="toja"/></p>
+           <p>Podaj drugą liczbę:
+         <input type="number" id="taktoja"/></p>
+           <p>
+         <button onclick="f(1)">DODAWANIE</button>
+         <button onclick="f(2)">ODEJMOWANIE</button>
+         <button onclick="f(3)">MNOŻENIE</button>
+         <button onclick="f(4)">DZIELENIE</button>
+           </p>
+           <output id="tak"></output>
+          </main>
+
+
+
+
+          <script>
+        function f(x) {
+        var a = parseInt(toja.value)
+        var b = parseInt(taktoja.value)
+        var w
+         if (isNaN(a) || isNaN(b)) {
+            document.write("Proszę uzupełnić obie liczby");
+         }
+         else { 
+          if (x == 1) w = a + b
+          else if(x == 2) w = a - b
+          else if(x == 3) w = a * b
+          else if(x == 4 && b!=0) w = a / b 
+         }
+        document.write("Wynik działania wynosi:" + w);
+        tak.value = w
+        }   
+          </script>
+</body>
+</html>
