@@ -2,19 +2,3 @@ body {
     margin: 10px auto;
     width: 800px;
     }
-    nav , main {
-    float: left;
-    }
-    p, nav  a {
-        margin: 10px;
-        }
-    nav{
-    width: 25%;
-    }
-    main {
-    width: 75%;
-    }
-
-    a {
-    display: block;
-    }
